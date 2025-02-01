@@ -12,7 +12,12 @@ dependencies {
     compileOnly(libs.room.gradlePlugin)
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = "study.android.application"
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+    }
 }
+
