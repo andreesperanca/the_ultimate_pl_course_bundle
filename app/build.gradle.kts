@@ -1,6 +1,6 @@
 plugins {
-    id("org.jetbrains.kotlin.plugin.compose")
     alias(libs.plugins.study.android.application.compose)
+    alias(libs.plugins.study.jvm.ktor)
 }
 
 android {

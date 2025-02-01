@@ -6,9 +6,10 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.jvm) apply false
     //Compiler
     alias(libs.plugins.compose.compiler) apply false
-
     //Ksp
     alias(libs.plugins.ksp) apply false
     //Room
     alias(libs.plugins.room) apply false
+    //Serialization
+    alias(libs.plugins.kotlin.serialization) apply false
 }

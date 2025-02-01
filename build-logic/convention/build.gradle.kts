@@ -38,6 +38,14 @@ gradlePlugin {
             id = "study.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = "study.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("jvmKtor") {
+            id = "study.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }
 
