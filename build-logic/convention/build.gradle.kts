@@ -22,6 +22,22 @@ gradlePlugin {
             id = "study.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "study.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidLibraryCompose") {
+            id = "study.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+        register("androidFeatureUi") {
+            id = "study.android.feature.ui"
+            implementationClass = "AndroidFeatureUiConventionPlugin"
+        }
+        register("androidRoom") {
+            id = "study.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }
 
